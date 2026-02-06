@@ -1,0 +1,56 @@
+[
+  {
+    "directory": "/Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other/codegen/mex/TransferFaceToVert",
+    "command": "/usr/bin/xcrun -sdk macosx15.4 clang++ -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other\" -I \"./interface\" -I \"/Applications/MATLAB_R2024b.app/extern/include\" -I \".\" -DMODEL=TransferFaceToVert_mex -DMW_NEEDS_VERSION_H -c  TransferFaceToVert_data.cpp -o build/maca64/TransferFaceToVert_data.o",
+    "file": "TransferFaceToVert_data.cpp",
+    "output": "build/maca64/TransferFaceToVert_data.o"
+  },
+  {
+    "directory": "/Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other/codegen/mex/TransferFaceToVert",
+    "command": "/usr/bin/xcrun -sdk macosx15.4 clang++ -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other\" -I \"./interface\" -I \"/Applications/MATLAB_R2024b.app/extern/include\" -I \".\" -DMODEL=TransferFaceToVert_mex -DMW_NEEDS_VERSION_H -c  rt_nonfinite.cpp -o build/maca64/rt_nonfinite.o",
+    "file": "rt_nonfinite.cpp",
+    "output": "build/maca64/rt_nonfinite.o"
+  },
+  {
+    "directory": "/Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other/codegen/mex/TransferFaceToVert",
+    "command": "/usr/bin/xcrun -sdk macosx15.4 clang++ -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other\" -I \"./interface\" -I \"/Applications/MATLAB_R2024b.app/extern/include\" -I \".\" -DMODEL=TransferFaceToVert_mex -DMW_NEEDS_VERSION_H -c  TransferFaceToVert_initialize.cpp -o build/maca64/TransferFaceToVert_initialize.o",
+    "file": "TransferFaceToVert_initialize.cpp",
+    "output": "build/maca64/TransferFaceToVert_initialize.o"
+  },
+  {
+    "directory": "/Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other/codegen/mex/TransferFaceToVert",
+    "command": "/usr/bin/xcrun -sdk macosx15.4 clang++ -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other\" -I \"./interface\" -I \"/Applications/MATLAB_R2024b.app/extern/include\" -I \".\" -DMODEL=TransferFaceToVert_mex -DMW_NEEDS_VERSION_H -c  TransferFaceToVert_terminate.cpp -o build/maca64/TransferFaceToVert_terminate.o",
+    "file": "TransferFaceToVert_terminate.cpp",
+    "output": "build/maca64/TransferFaceToVert_terminate.o"
+  },
+  {
+    "directory": "/Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other/codegen/mex/TransferFaceToVert",
+    "command": "/usr/bin/xcrun -sdk macosx15.4 clang++ -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other\" -I \"./interface\" -I \"/Applications/MATLAB_R2024b.app/extern/include\" -I \".\" -DMODEL=TransferFaceToVert_mex -DMW_NEEDS_VERSION_H -c  TransferFaceToVert.cpp -o build/maca64/TransferFaceToVert.o",
+    "file": "TransferFaceToVert.cpp",
+    "output": "build/maca64/TransferFaceToVert.o"
+  },
+  {
+    "directory": "/Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other/codegen/mex/TransferFaceToVert",
+    "command": "/usr/bin/xcrun -sdk macosx15.4 clang++ -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other\" -I \"./interface\" -I \"/Applications/MATLAB_R2024b.app/extern/include\" -I \".\" -DMODEL=TransferFaceToVert_mex -DMW_NEEDS_VERSION_H -c  interface/_coder_TransferFaceToVert_api.cpp -o build/maca64/_coder_TransferFaceToVert_api.o",
+    "file": "interface/_coder_TransferFaceToVert_api.cpp",
+    "output": "build/maca64/_coder_TransferFaceToVert_api.o"
+  },
+  {
+    "directory": "/Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other/codegen/mex/TransferFaceToVert",
+    "command": "/usr/bin/xcrun -sdk macosx15.4 clang++ -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other\" -I \"./interface\" -I \"/Applications/MATLAB_R2024b.app/extern/include\" -I \".\" -DMODEL=TransferFaceToVert_mex -DMW_NEEDS_VERSION_H -c  interface/_coder_TransferFaceToVert_mex.cpp -o build/maca64/_coder_TransferFaceToVert_mex.o",
+    "file": "interface/_coder_TransferFaceToVert_mex.cpp",
+    "output": "build/maca64/_coder_TransferFaceToVert_mex.o"
+  },
+  {
+    "directory": "/Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other/codegen/mex/TransferFaceToVert",
+    "command": "/usr/bin/xcrun -sdk macosx15.4 clang++ -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other\" -I \"./interface\" -I \"/Applications/MATLAB_R2024b.app/extern/include\" -I \".\" -DMODEL=TransferFaceToVert_mex -DMW_NEEDS_VERSION_H -c  interface/_coder_TransferFaceToVert_info.cpp -o build/maca64/_coder_TransferFaceToVert_info.o",
+    "file": "interface/_coder_TransferFaceToVert_info.cpp",
+    "output": "build/maca64/_coder_TransferFaceToVert_info.o"
+  },
+  {
+    "directory": "/Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other/codegen/mex/TransferFaceToVert",
+    "command": "/usr/bin/xcrun -sdk macosx15.4 clang++ -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other\" -I \"./interface\" -I \"/Applications/MATLAB_R2024b.app/extern/include\" -I \".\" -DMODEL=TransferFaceToVert_mex -DMW_NEEDS_VERSION_H -c  /Applications/MATLAB_R2024b.app/extern/version/cpp_mexapi_version.cpp -o build/maca64/cpp_mexapi_version.o",
+    "file": "/Applications/MATLAB_R2024b.app/extern/version/cpp_mexapi_version.cpp",
+    "output": "build/maca64/cpp_mexapi_version.o"
+  }
+]

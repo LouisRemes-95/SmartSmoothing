@@ -1,0 +1,52 @@
+# CompilerName=clang
+# Mode=optim
+ninja_required_version = 1.3
+
+# Basic folders
+root = .
+builddir = $root/build/maca64
+matlabdir = /Applications/MATLAB_R2024b.app
+startdir = /Users/louisremes/Documents/Doctorat/Research/Codes/SmartSmoothingAlg/Other
+
+# Toolchain information
+cc = /usr/bin/xcrun -sdk macosx15.4 clang
+cxx = /usr/bin/xcrun -sdk macosx15.4 clang++
+linker = /usr/bin/xcrun -sdk macosx15.4 clang
+linkerxx = /usr/bin/xcrun -sdk macosx15.4 clang++
+
+cflags =  -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -fvisibility=hidden -std=c99 -I "$root" -I "$startdir" -I "$root/interface" -I "$matlabdir/extern/include" -I "." -DMODEL=TransferFaceToVert_mex -DMW_NEEDS_VERSION_H -c 
+
+cxxflags =  -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I "$root" -I "$startdir" -I "$root/interface" -I "$matlabdir/extern/include" -I "." -DMODEL=TransferFaceToVert_mex -DMW_NEEDS_VERSION_H -c 
+
+ldflags =  -Wl,-twolevel_namespace  -arch arm64 -mmacosx-version-min=12.0 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -bundle   -L"$matlabdir/bin/maca64" -weak-lmx -weak-lmex -weak-lmat -lc++  -Wl,-rpath,@loader_path -o TransferFaceToVert_mex.mexmaca64 -lemlrt -lcovrt -lut -lmwmathutil 
+
+ldxxflags =  -Wl,-twolevel_namespace  -arch arm64 -mmacosx-version-min=12.0 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -framework Cocoa -bundle  -stdlib=libc++ -L"$matlabdir/bin/maca64" -weak-lmx -weak-lmex -weak-lmat -L"$matlabdir/extern/bin/maca64" -weak-lMatlabDataArray  -Wl,-rpath,@loader_path -o TransferFaceToVert_mex.mexmaca64 -lemlrt -lcovrt -lut -lmwmathutil 
+
+linkobjs = 
+
+# Build Rules
+rule cc
+    command = $cc $cflags $in -o $out
+
+rule cxx
+    command = $cxx $cxxflags $in -o $out
+
+rule link
+    command = $linker $in $linkobjs $ldflags
+
+rule linkxx
+    command = $linkerxx $in $linkobjs $ldxxflags
+
+# Build
+build $builddir/TransferFaceToVert_data.o : cxx $root/TransferFaceToVert_data.cpp
+build $builddir/rt_nonfinite.o : cxx $root/rt_nonfinite.cpp
+build $builddir/TransferFaceToVert_initialize.o : cxx $root/TransferFaceToVert_initialize.cpp
+build $builddir/TransferFaceToVert_terminate.o : cxx $root/TransferFaceToVert_terminate.cpp
+build $builddir/TransferFaceToVert.o : cxx $root/TransferFaceToVert.cpp
+build $builddir/_coder_TransferFaceToVert_api.o : cxx $root/interface/_coder_TransferFaceToVert_api.cpp
+build $builddir/_coder_TransferFaceToVert_mex.o : cxx $root/interface/_coder_TransferFaceToVert_mex.cpp
+build $builddir/_coder_TransferFaceToVert_info.o : cxx $root/interface/_coder_TransferFaceToVert_info.cpp
+build $builddir/cpp_mexapi_version.o : cxx $matlabdir/extern/version/cpp_mexapi_version.cpp
+
+# Link
+build $root/TransferFaceToVert_mex.mexmaca64 : linkxx $builddir/TransferFaceToVert_data.o $builddir/rt_nonfinite.o $builddir/TransferFaceToVert_initialize.o $builddir/TransferFaceToVert_terminate.o $builddir/TransferFaceToVert.o $builddir/_coder_TransferFaceToVert_api.o $builddir/_coder_TransferFaceToVert_mex.o $builddir/_coder_TransferFaceToVert_info.o $builddir/cpp_mexapi_version.o 

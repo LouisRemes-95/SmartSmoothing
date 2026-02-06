@@ -1,0 +1,11 @@
+# ninja log v5
+1	957	1745328099423489962	build/maca64/cpp_mexapi_version.o	296e88568525222b
+0	957	1745328099423484004	build/maca64/rt_nonfinite.o	7609a080ec0e69ac
+0	965	1745328099431641142	build/maca64/TransferFaceToVert_data.o	d14b4e4904a9e2e2
+0	971	1745328099437847547	build/maca64/TransferFaceToVert_initialize.o	362d6d0c67bd2d78
+0	972	1745328099438133170	build/maca64/TransferFaceToVert_terminate.o	a6bb5d72311aecec
+1	979	1745328099446567306	build/maca64/_coder_TransferFaceToVert_info.o	9d3d74b3ceccdfb6
+1	995	1745328099462422129	build/maca64/_coder_TransferFaceToVert_mex.o	59881669c0b0c85c
+0	1160	1745328099626412683	build/maca64/TransferFaceToVert.o	eb6495bd9960e457
+1	1165	1745328099631076726	build/maca64/_coder_TransferFaceToVert_api.o	227ed75b26b944d5
+1165	1292	1745328099756304612	TransferFaceToVert_mex.mexmaca64	a84ea595ceab42d6

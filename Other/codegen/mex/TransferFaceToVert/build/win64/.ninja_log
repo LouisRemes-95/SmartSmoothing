@@ -1,0 +1,11 @@
+# ninja log v5
+9	646	7276333946706138	build/win64/TransferFaceToVert_data.obj	22aee5860dc0e002
+14	778	7276333947983155	build/win64/rt_nonfinite.obj	a89007fe594304f
+39	783	7276333948033174	build/win64/_coder_TransferFaceToVert_info.obj	26e0990210610a9a
+1	787	7276333948003171	build/win64/TransferFaceToVert_initialize.obj	2d86a3f693d57904
+25	789	7276333947983155	build/win64/TransferFaceToVert_terminate.obj	8d1ff3aa95c91bdc
+44	792	7276333947983155	build/win64/cpp_mexapi_version.obj	2c1997ac241d7ddf
+52	795	7276333948033174	build/win64/_coder_TransferFaceToVert_mex.obj	ebb75cdfe4107396
+20	857	7276333948803326	build/win64/TransferFaceToVert.obj	73a07815469ec558
+34	859	7276333948813319	build/win64/_coder_TransferFaceToVert_api.obj	c677de90331f9b5d
+861	957	7276333949790352	TransferFaceToVert_mex.mexw64	a2479daf6bb10108

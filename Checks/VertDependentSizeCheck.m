@@ -1,0 +1,6 @@
+function OK = VertDependentSizeCheck(MeshStruct)
+RequieredSize = size(MeshStruct.Vertices,1);
+OK = all([size(MeshStruct.VertexNormals, 1) == RequieredSize...
+          size(MeshStruct.K1, 1) == RequieredSize...
+          size(MeshStruct.K2, 1) == RequieredSize]);
+end
